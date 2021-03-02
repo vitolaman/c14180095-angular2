@@ -1,4 +1,22 @@
-<hello name="{{ name }}"></hello>
 <p>
-  Start editing to see some magic happen :)
+  Notes
 </p>
+<table>
+  <tr>
+    <td>Judul:</td>
+    <td><input type="text" [(ngModel)]="judul"> </td>
+  </tr>
+  <tr>
+     <td>tanggal:</td>
+    <td><input type="text" [(ngModel)]="tanggal"> </td>
+  </tr>
+  <tr>
+     <td>Isi:</td>
+    <td><input type="text" [(ngModel)]="isi"> </td>
+  </tr>
+</table>
+<button (click)="SUBMITNOTE()">Submit</button>
+<br /><br />
+<a routerLink="/note">Catatan</a> <a>	&nbsp;	&nbsp;	&nbsp;</a> <a routerLink="/favorite">Favorit</a>
+<br /><br />
+<router-outlet></router-outlet>
